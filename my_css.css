@@ -183,6 +183,20 @@ ul#line_tabs li:last-child a {
 
 /*Form page 3*/
 
+.list_title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.list_title p>span {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 2em;
+    padding: 0 5px;
+    background-color: #525252;
+    border-radius: 3px;
+}
+
 #tabs-3 table {
     width: 100%;
     text-align: center;
