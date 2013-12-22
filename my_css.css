@@ -1,65 +1,88 @@
-#line_tabs {
-    height:48px;
+#inset {
+    height:47px;
+}
+ul#line_tabs {
     list-style:none;
-    margin: 0 auto;
-    padding-left:25px;
-    width:920px;
+    margin: 0;
+    padding:0 0 0 4px;
+    display: inline-block;
 }
 
-#line_tabs li {
+ul#line_tabs li {
     display:inline-block;
     float:right;
-    margin:0px;
+    margin:0;
     padding:0 10px 0 0;
     position:relative;
     overflow:visible;
     text-align:center;
 }
 
-#line_tabs li a:before,
-#line_tabs li a,
-#line_tabs li a:after {
+ul#line_tabs li a:before,
+ul#line_tabs li a,
+ul#line_tabs li a:after {
     height:37px;
 }
-#line_tabs li a:before,
-#line_tabs li a:after {
+ul#line_tabs li a.active:before,
+ul#line_tabs li a.active,
+ul#line_tabs li a.active:after {
+    height:47px;
+}
+ul#line_tabs li a:before,
+ul#line_tabs li a.active:before,
+ul#line_tabs li a:after,
+ul#line_tabs li a.active:after {
     content: "";
     position: absolute;
     top: 0;
 }
-#line_tabs li a:before {
-    right: -26px;
-    width: 26px;
+ul#line_tabs li a:before {
+    right: -37px;
+    width: 37px;
     background:url("img/tab_before.png") no-repeat left top;
 }
-#line_tabs li a:after {
+ul#line_tabs li a:after {
     left: -4px;
     width: 4px;
     background:url("img/tab_after.png") no-repeat left top;
 }
-#line_tabs li a {
-    background:url("img/tab_bg.png") repeat-x left top,
-                linear-gradient(-225deg, #e3e3e3, #efefef);
+ul#line_tabs li a.active:before {
+    right: -46px;
+    width: 46px;
+    background:url("img/tab_active_before.png") no-repeat left top;
+}
+ul#line_tabs li a.active:after {
+    left: -4px;
+    width: 4px;
+    background:url("img/tab_active_after.png") no-repeat left top;
+}
+ul#line_tabs li a,
+ul#line_tabs li a.active {
     display: block;
     position: relative;
+}
+ul#line_tabs li a {
+    background: url("img/tab_bg.png") repeat-x left top,
+                linear-gradient(-225deg, #e3e3e3, #efefef);
     line-height: 37px;
     font-size: 12px;
-    padding: 0 4px 0 20px;
-    margin:0 -26px 0 20px;
+    padding: 0 4px 0 30px;
+    margin:10px -37px 0 31px;
     text-decoration:none;
-    /*width:159px;*/
 }
-/*#line_tabs li a.active,*/
-/*#line_tabs li a:hover {*/
-    /*background: url("img/tab_active.png") no-repeat center bottom;*/
-    /*color: #757575;*/
-    /*line-height: 47px;*/
-    /*font-weight: bold;*/
-    /*z-index: 50;*/
-    /*height: 47px;*/
-    /*width: 127px;*/
-    /*padding: 1px 0 0 0;*/
-/*}*/
+ul#line_tabs li a:hover {
+    color: #444444;
+    font-weight: bold;
+}
+ul#line_tabs li a.active {
+    background: url("img/tab_active_bg.png") repeat-x left top;
+    color: #757575;
+    line-height: 47px;
+    font-weight: bold;
+    z-index: 50;
+    padding: 1px 0 0 17px;
+    margin:0 -31px 0 0;
+}
 
 .jshop {
     border-top: none;
