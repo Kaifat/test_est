@@ -89,9 +89,12 @@ ul#line_tabs li a.active {
 }
 
 .personal_page {
-    border-top: none;
     background-color: #f8f8f8;
     border-radius: 0 0 3px 3px;
+    border-top: none;
+    border-right: 1px solid #C8CBCD;
+    border-bottom: 1px solid #C8CBCD;
+    border-left: 1px solid #C8CBCD;
     padding: 25px;
 }
 
