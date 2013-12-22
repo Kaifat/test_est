@@ -1,5 +1,11 @@
+#tabs {
+    position: relative;
+    margin-top: 50px;
+}
 #inset {
     height:47px;
+    position: absolute;
+    top: -46px;
 }
 ul#line_tabs {
     list-style:none;
@@ -7,95 +13,103 @@ ul#line_tabs {
     padding:0 0 0 4px;
     display: inline-block;
 }
-
 ul#line_tabs li {
     display:inline-block;
     float:right;
-    margin:0;
-    padding:0 10px 0 0;
+    margin-top:10px;
+    margin-right:0;
     position:relative;
     overflow:visible;
-    text-align:center;
+    padding: 0 0 0 20px;
+    background: url("img/tab_bg.png") repeat-x left top,
+        linear-gradient(-225deg, #e3e3e3, #efefef);
+    line-height: 37px;
+    font-size: 12px;
 }
-
-ul#line_tabs li a:before,
-ul#line_tabs li a,
-ul#line_tabs li a:after {
+ul#line_tabs li.active {
+    background: url("img/tab_active_bg.png") repeat-x left top;
+    line-height: 47px;
+    z-index: 50;
+    padding-top: 1px;
+    margin-top: 0;
+    margin-right: 0; /* -37px */
+}
+ul#line_tabs li:before,
+ul#line_tabs li,
+ul#line_tabs li:after {
     height:37px;
 }
-ul#line_tabs li a.active:before,
-ul#line_tabs li a.active,
-ul#line_tabs li a.active:after {
+ul#line_tabs li.active:before,
+ul#line_tabs li.active,
+ul#line_tabs li.active:after {
     height:47px;
 }
-ul#line_tabs li a:before,
-ul#line_tabs li a.active:before,
-ul#line_tabs li a:after,
-ul#line_tabs li a.active:after {
+ul#line_tabs li:before,
+ul#line_tabs li.active:before,
+ul#line_tabs li:after,
+ul#line_tabs li.active:after {
     content: "";
     position: absolute;
     top: 0;
 }
-ul#line_tabs li a:before {
+ul#line_tabs li:before {
     right: -37px;
     width: 37px;
     background:url("img/tab_before.png") no-repeat left top;
 }
-ul#line_tabs li a:after {
+ul#line_tabs li:after {
     left: -4px;
     width: 4px;
     background:url("img/tab_after.png") no-repeat left top;
 }
-
-/*ul#line_tabs li a:before:first-child {*/
-    /*background: url("img/tab_before_last.png") no-repeat left top;*/
-/*}*/
-
-ul#line_tabs li a.active:before {
+ul#line_tabs li:first-child:before {
+    background: url("img/tab_before_last.png") no-repeat left top;
+}
+ul#line_tabs li:first-child.active:before {
+    background: url("img/tab_active_before_last.png") no-repeat left top;
+}
+ul#line_tabs li.active:before {
     right: -46px;
     width: 46px;
     background:url("img/tab_active_before.png") no-repeat left top;
 }
-ul#line_tabs li a.active:after {
+ul#line_tabs li.active:after {
     left: -4px;
     width: 4px;
     background:url("img/tab_active_after.png") no-repeat left top;
 }
 ul#line_tabs li a,
-ul#line_tabs li a.active {
+ul#line_tabs li.active a {
+    text-decoration:none;
     display: block;
-    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 ul#line_tabs li a {
-    background: url("img/tab_bg.png") repeat-x left top,
-                linear-gradient(-225deg, #e3e3e3, #efefef);
-    line-height: 37px;
-    font-size: 12px;
-    padding: 0 4px 0 30px;
-    margin:10px -37px 0 31px;
-    text-decoration:none;
+    margin-right: 9px;
+    margin-left: 19px;
 }
-
-ul#line_tabs li a:hover {
+ul#line_tabs li:hover a {
     color: #444444;
 }
-ul#line_tabs li a.active {
-    background: url("img/tab_active_bg.png") repeat-x left top;
+ul#line_tabs li.active a {
     color: #757575;
-    line-height: 47px;
     font-weight: bold;
-    z-index: 50;
-    padding: 1px 0 0 17px;
-    margin:0 -31px 0 0;
+    margin-left: 0;
 }
-
+ul#line_tabs li:last-child a {
+    margin-left: 0;
+}
+/*----------------------------------------------------------*/
 .personal_page {
     background-color: #f8f8f8;
-    border-radius: 0 0 3px 3px;
-    border-top: none;
-    border-right: 1px solid #C8CBCD;
-    border-bottom: 1px solid #C8CBCD;
-    border-left: 1px solid #C8CBCD;
+    border-radius: 0 3px 3px 3px;
+    /*border-top: none;*/
+    /*border-right: 1px solid #C8CBCD;*/
+    /*border-bottom: 1px solid #C8CBCD;*/
+    /*border-left: 1px solid #C8CBCD;*/
+    border: 1px solid #C8CBCD;
     padding: 25px;
 }
 
