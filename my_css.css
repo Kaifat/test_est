@@ -183,6 +183,43 @@ ul#line_tabs li:last-child a {
 
 /*Form page 3*/
 
+#tabs-3 input[type=text] {
+    width: 184px;
+}
+
+.list_sort>div {
+    margin-right: 25px;
+}
+
+.list_sort>div:last-child {
+    margin-right: 0;
+}
+
+#tabs-3 select {
+    height: 27px;
+    width: 111px;
+    background: url("img/bg_select.png") repeat-x center;
+    border: solid 1px #bcbcbc;
+    border-radius: 3px;
+    color: #686868;
+    font-size: 12px;
+}
+
+#tabs-3 input[type=submit] {
+    height: 27px;
+    width: 104px;
+    background: url("img/bg_submit.png") repeat-x center;
+    border: solid 1px #3f9849;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+#tabs-3 input[type=radio],
+#tabs-3 input[type=radio] span {
+    vertical-align: middle;
+}
+
+
 .list_title {
     font-size: 12px;
     font-weight: bold;
@@ -236,6 +273,10 @@ ul#line_tabs li:last-child a {
 
 #tabs-3 .th_3 {
     width: 68%;
+}
+
+#tabs-3 td:nth-child(2) {
+    text-transform: uppercase;
 }
 
 #tabs-3 .td_gold {
