@@ -105,10 +105,6 @@ ul#line_tabs li:last-child a {
 .personal_page {
     background-color: #f8f8f8;
     border-radius: 0 3px 3px 3px;
-    /*border-top: none;*/
-    /*border-right: 1px solid #C8CBCD;*/
-    /*border-bottom: 1px solid #C8CBCD;*/
-    /*border-left: 1px solid #C8CBCD;*/
     border: 1px solid #C8CBCD;
     padding: 25px;
 }
