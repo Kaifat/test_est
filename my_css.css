@@ -72,7 +72,6 @@ ul#line_tabs li a {
 }
 ul#line_tabs li a:hover {
     color: #444444;
-    font-weight: bold;
 }
 ul#line_tabs li a.active {
     background: url("img/tab_active_bg.png") repeat-x left top;
