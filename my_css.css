@@ -20,8 +20,6 @@
     position:relative;
     overflow:visible;
     text-align:center;
-    /*height: 48px;*/
-    /*vertical-align: middle;*/
     /*width:159px;*/
 }
 #line_tabs li a{
@@ -39,12 +37,12 @@
 #line_tabs li a.active{
     background: url("img/tab_active.png") no-repeat center bottom;
     color: #757575;
-    line-height: 48px;
+    line-height: 47px;
     font-weight: bold;
     z-index: 50;
-    height: 48px;
+    height: 47px;
     width: 127px;
-    padding: 0;
+    padding: 1px 0 0 0;
 }
 #line_tabs li a:hover{
     background: url("img/tab_active.png") no-repeat center bottom;
@@ -54,4 +52,11 @@
     line-height: 48px;
     width: 127px;
     padding: 0;
+}
+
+.jshop {
+    border-top: none;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+
 }
