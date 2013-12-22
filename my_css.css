@@ -169,3 +169,14 @@ ul#line_tabs li a.active {
 .avatar {
     padding: 10px 0;
 }
+
+/*Form page 3*/
+
+#tabs-3 table {
+    width: 100%;
+}
+
+#tabs-3 table tr {
+    border: solid 1px #c9c9c9;
+    border-collapse: collapse;
+}
