@@ -338,14 +338,38 @@
                                 <div class="jshop">
 
                                     <div class="jshop_list_product">
-                                        <form action="http://estenzo.biz/zoo/diag" method="post" name="sort_count"
-                                              id="sort_count">
-                                            <div class="block_sorting_count_to_page">
-
+                                        <form action="#" method="post">
+                                            <div>
+                                                <div>
+                                                    <label>Фамилия</label>
+                                                    <input type="text" name="last_name">
+                                                </div>
+                                                <div>
+                                                    <label>Имя</label>
+                                                    <input type="text" name="first_name">
+                                                </div>
+                                                <div>
+                                                    <label>Отчество</label>
+                                                    <input type="text" name="patronymic_name">
+                                                </div>
+                                                <div>
+                                                    <label>Пароль</label>
+                                                        <div>
+                                                            <input type="password" name="old_password">
+                                                            <span>старый пароль</span>
+                                                            <input type="password" name="new_password">
+                                                            <span>новый пароль</span>
+                                                        </div>
+                                                </div>
+                                                <div>
+                                                    <label>Скрыть Ф.И.О и контакты на нашем сайте:</label>
+                                                    <input type="checkbox" value="off">
+                                                    <label>Аватар</label>
+                                                    <input type="file">
+                                                </div>
                                             </div>
 
-                                            <input type="hidden" name="orderby" id="orderby" value="0"/>
-                                            <input type="hidden" name="limitstart" value="0"/>
+
                                         </form>
                                     </div>
                                 </div>
