@@ -46,6 +46,11 @@ ul#line_tabs li a:after {
     width: 4px;
     background:url("img/tab_after.png") no-repeat left top;
 }
+
+/*ul#line_tabs li a:before:first-child {*/
+    /*background: url("img/tab_before_last.png") no-repeat left top;*/
+/*}*/
+
 ul#line_tabs li a.active:before {
     right: -46px;
     width: 46px;
