@@ -140,7 +140,8 @@ ul#line_tabs li:last-child a {
     margin: 10px 0;
 }
 
-.personal_page input {
+.personal_page input[type=text],
+.personal_page input[type=password] {
     height: 28px;
     border: solid 1px #cacaca;
     border-radius: 3px;
@@ -158,6 +159,29 @@ ul#line_tabs li:last-child a {
     width: 171px;
 }
 
+/*--------------------------------------------------------------------*/
+.check input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.check label {
+    cursor: pointer;
+}
+.check label:after {
+    content: ' ';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(img/checkbox.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+.check input[type=checkbox]:checked + label:after {
+    background-position: 0 -16px;
+}
+/*--------------------------------------------------------------------*/
 .form_block .float-left {
     margin-right: 39px;
 }
@@ -214,10 +238,10 @@ ul#line_tabs li:last-child a {
     color: #ffffff;
 }
 
-#tabs-3 input[type=radio],
-#tabs-3 input[type=radio] span {
-    vertical-align: middle;
-}
+/*#tabs-3 input[type=radio],*/
+/*#tabs-3 input[type=radio] span {*/
+    /*vertical-align: middle;*/
+/*}*/
 
 
 .list_title {
