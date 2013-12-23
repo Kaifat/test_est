@@ -426,7 +426,7 @@ div.relative span {
     padding: 10px 0 0 0;
 }
 
-.news_readmore a {
+.readmore a {
     position: relative;
     display: inline-block;
     color: #535252;
@@ -437,18 +437,18 @@ div.relative span {
     background: url("img/bg_readmore.png") repeat-x center #f0f0f0;
 }
 
-.news_readmore a:before {
+.readmore a:before {
     background: url("img/bg_readmore_before.png") no-repeat center left;
     left: -4px;
 }
 
-.news_readmore a:after {
+.readmore a:after {
     background: url("img/bg_readmore_after.png") no-repeat center right;
     right: -4px;
 }
 
-.news_readmore a:before,
-.news_readmore a:after {
+.readmore a:before,
+.readmore a:after {
     content: "";
     position: absolute;
     top: 0;
@@ -479,6 +479,16 @@ div.relative span {
 
 #tabs-8 .submit_form {
     text-transform: uppercase;
+    margin-right: 40px;
+}
+
+#tabs-8 .usual_question {
+    font-size: 13px;
+    color: #3e3e3e;
+    font-weight: bold;
+}
+
+#tabs-8 .readmore {
     margin-right: 40px;
 }
 
