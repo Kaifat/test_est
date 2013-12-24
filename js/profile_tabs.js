@@ -1,6 +1,7 @@
 (function($){
-
     $(document).ready(function() {
+
+        // tabs
         $( "#tabs" ).tabs({
             active: 7,
             activate: function( event, ui ) {
@@ -8,5 +9,13 @@
                 $(ui.oldTab).removeClass('active');
             }
         });
+
+        // shop_categories
+        $('#shop_categories').accordion({
+            collapsible: true,
+            active: 0,
+            heightStyle: "content"
+        });
+
     });
 })(jQuery);
