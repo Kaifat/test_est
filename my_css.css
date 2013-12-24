@@ -130,13 +130,7 @@ ul#line_tabs li:last-child a {
     content: "";
     clear: both;
 }
-.personal_page label {
-    display: block;
-    float: left;
-    font-weight: bold;
-    line-height: 30px;
-    margin: 0 12px 0 0;
-}
+
 .personal_page .row label {
     width: 60px;
 }
@@ -215,6 +209,113 @@ ul#line_tabs li:last-child a {
 }
 
 /*tabs-2*/
+
+
+/*#select_bill li.ui-selected { background: #94bf86; color: white; }*/
+#select_bill { list-style-type: none; margin: 0; padding: 0; width: 469px; }
+
+
+
+/*----------*/
+#select_bill li {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    color: #535252;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 32px;
+    margin: 4px 0;
+    padding: 0 15px;
+    background: url("img/bg_bill.png") repeat-x center #f4f4f4;
+}
+
+#select_bill li:before {
+    background: url("img/bg_bill_before.png") no-repeat center left;
+    left: -4px;
+}
+
+#select_bill li:after {
+    background: url("img/bg_bill_after.png") no-repeat center right;
+    right: -4px;
+}
+
+#select_bill li:before,
+#select_bill li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 32px;
+    width: 4px;
+}
+
+#select_bill li.ui-selected {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    color: #535252;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 32px;
+    margin: 4px 0;
+    padding: 0 15px;
+    background: url("img/bg_bill_active.png") repeat-x center;
+}
+
+#select_bill li:before.ui-selected {
+    background: url("img/bg_bill_active_before.png") no-repeat center left !important;
+    left: -4px;
+}
+
+#select_bill li:after.ui-selected {
+    background: url("img/bg_bill_active_after.png") no-repeat center right !important;
+    right: -4px;
+}
+
+#select_bill li:before.ui-selected,
+#select_bill li:after.ui-selected {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 32px;
+    width: 4px;
+}
+/*---------------------------------*/
+
+#select_bill span.balance {
+    display: inline-blocks;
+    width: 30px;
+    padding: 0 0 0 200px;
+}
+
+
+#active_bill {
+    background-color: #e4f2e0;
+}
+
+#active_bill p {
+    color: #535252;
+    font-weight: bold;
+}
+
+#active_bill span {
+    padding: 0 0 0 20px;
+}
+
+#active_bill p:last-child {
+    margin-bottom: 0;
+}
+
+#active_bill>div.float-left:after {
+    content: "«Экструм»";
+    font-size: 11px;
+    line-height: 15px;
+    color: #80897e;
+    padding: 0 0 0 10px;
+
+}
 
 /*tabs-3*/
 
@@ -324,7 +425,7 @@ ul#line_tabs li:last-child a {
 }
 
 #tabs-3 table,
-#tabs-6 table {
+table.request_history  {
     width: 100%;
     text-align: center;
 }
@@ -470,37 +571,9 @@ div.relative span {
 
 /*tabs-6*/
 
-.asks a {
-    position: relative;
-    display: inline-block;
-    color: #535252;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 37px;
-    padding: 0 45px;
-    background: url("img/bg_asks.png") repeat-x center #f0f0f0;
-}
 
-.asks a:before {
-    background: url("img/bg_asks_before.png") no-repeat center left;
-    left: -4px;
-}
 
-.asks a:after {
-    background: url("img/bg_asks_after.png") no-repeat center right;
-    right: -4px;
-}
-
-.asks a:before,
-.asks a:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 37px;
-    width: 4px;
-}
-
-#tabs-6 table {
+table.request_history  {
     font-size: 11px;
     color: #535252;
     border-collapse: separate;
@@ -508,61 +581,61 @@ div.relative span {
     margin-top: -10px; /* correct offset on first border spacing if desired */
 }
 
-#tabs-6 td:nth-child(3) a {
+table.request_history  td:nth-child(3) a {
     text-decoration: underline;
 }
 
-#tabs-6 table tr:nth-child(odd) td {
+table.request_history  tr:nth-child(odd) td {
     border: solid 1px #e6e6e6;
     border-style: solid none;
     padding: 10px;
 }
 
-#tabs-6 table tr:nth-child(odd) td:first-child {
+table.request_history  tr:nth-child(odd) td:first-child {
     border-left-style: solid;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-#tabs-6 table tr:nth-child(odd) td:last-child {
+table.request_history  tr:nth-child(odd) td:last-child {
     border-right-style: solid;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-#tabs-6 tr.balance_plus td:nth-child(2) span {
+table.request_history  tr.balance_plus td:nth-child(2) span {
     background: url("img/bg_balance_plus.png") no-repeat center left;
     padding: 0 10px;
 
 }
 
-#tabs-6 tr.balance_plus td:nth-child(3) a {
+table.request_history  tr.balance_plus td:nth-child(3) a {
     color: #599546;
 }
 
-#tabs-6 tr.balance_minus td:nth-child(2) span {
+table.request_history  tr.balance_minus td:nth-child(2) span {
     background: url("img/bg_balance_minus.png") no-repeat center left;
     padding: 0 12px;
 
 }
 
-#tabs-6 tr.balance_minus td:nth-child(3) a {
+table.request_history  tr.balance_minus td:nth-child(3) a {
     color: #7a1414;
 }
 
-#tabs-6 td_1 {
+table.request_history  td_1 {
     width: 16%;
 }
 
-#tabs-6 td_2 {
+table.request_history  td_2 {
     width: 20%;
 }
 
-#tabs-6 td_3 {
+table.request_history  td_3 {
     width: 32%;
 }
 
-#tabs-6 td_4 {
+table.request_history  td_4 {
     width: 32%;
 }
 
@@ -669,3 +742,70 @@ div.relative span {
     color: #535252;
     font-weight: bold;
 }
+
+.personal_page h5 {
+    font-size: 13px;
+    color: #535252;
+    font-weight: bold;
+}
+
+.personal_page label {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    display: block;
+    float: left;
+    margin: 0 12px 0 0;
+}
+
+
+/*BUTTONS*/
+
+/* NOT DELETE / LAST ACTUAL */
+
+/*#tabs-2 .asks a,*/
+/*#tabs-6 .asks a {*/
+
+/*}*/
+
+#tabs-2 .asks a {
+    margin: 0 10px;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.asks a {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 37px;
+    color: #535252;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 37px;
+    text-align: center;
+    /*padding: 0 45px;*/
+    background: url("img/bg_asks.png") repeat-x center #f0f0f0;
+}
+
+.asks a:before {
+    background: url("img/bg_asks_before.png") no-repeat center left;
+    left: -4px;
+}
+
+.asks a:after {
+    background: url("img/bg_asks_after.png") no-repeat center right;
+    right: -4px;
+}
+
+.asks a:before,
+.asks a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 37px;
+    width: 4px;
+}
+
+/*TABLES*/
