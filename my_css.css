@@ -7,7 +7,7 @@
     float: left;
     height: 120px;
     width: 120px;
-    margin: 0 30px 0 0;
+    margin: 0 25px 0 0;
 }
 .ava .profile-img,
 .ava a.shadow::before {
@@ -99,7 +99,7 @@ ul#select-status-menu {
     padding: 0;
     border: solid 1px #e0e0e0;
     list-style: none;
-    box-shadow: 0 2px 2px #D3D3D3;
+    box-shadow: 0 5px 15px #D3D3D3;
 }
 ul#select-status-menu li {
     height: 45px;
@@ -107,6 +107,10 @@ ul#select-status-menu li {
     background: url('./img/hr_style.png') repeat-x top left;
     margin: 0;
     padding: 0 0 0 10px;
+}
+ul#select-status-menu li:first-child {
+    background: none;
+    border-top: solid 1px #e0e0e0;
 }
 
 /*NAVIGATION TABS*/
@@ -273,6 +277,64 @@ ul#line_tabs li:last-child a {
 }
 
 /*--------------------------------------------------------------------*/
+div.custom_file_upload {
+    height: 20px;
+}
+input.file {
+    width: 180px !important;
+    border: 1px solid #d3d3d3;
+    border-right: 0;
+    padding: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    outline: none;
+}
+
+div.file_upload {
+    width: 80px;
+    height: 20px;
+    background:linear-gradient(0deg, #e0e0e0, #f0f0f0);
+    border: solid 1px #d3d3d3;
+    display: inline;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    padding: 4px 0;
+}
+div.file_upload:before {
+    content: 'Обзор';
+    position: absolute;
+    left: 0; right: 0;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+div.file_upload input {
+    position: relative;
+    height: 30px;
+    display: inline;
+    cursor: pointer;
+    opacity: 0;
+}
+/**********************************/
 .check_green input[type=checkbox],
 .check_blue input[type=checkbox] {
     position: absolute;
