@@ -17,6 +17,6 @@
             heightStyle: "content"
         });
 
-        $( "#select_bill" ).selectable();
+        $( "#bill_select" ).selectable();
     });
 })(jQuery);

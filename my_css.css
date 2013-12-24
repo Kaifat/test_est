@@ -211,13 +211,13 @@ ul#line_tabs li:last-child a {
 /*tabs-2*/
 
 
-/*#select_bill li.ui-selected { background: #94bf86; color: white; }*/
-#select_bill { list-style-type: none; margin: 0; padding: 0; width: 469px; }
+/*#bill_select li.ui-selected { background: #94bf86; color: white; }*/
+#bill_select { list-style-type: none; margin: 0; padding: 0; width: 469px; }
 
 
 
 /*----------*/
-#select_bill li {
+#bill_select li {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -231,18 +231,18 @@ ul#line_tabs li:last-child a {
     background: url("img/bg_bill.png") repeat-x center #f4f4f4;
 }
 
-#select_bill li:before {
+#bill_select li:before {
     background: url("img/bg_bill_before.png") no-repeat center left;
     left: -4px;
 }
 
-#select_bill li:after {
+#bill_select li:after {
     background: url("img/bg_bill_after.png") no-repeat center right;
     right: -4px;
 }
 
-#select_bill li:before,
-#select_bill li:after {
+#bill_select li:before,
+#bill_select li:after {
     content: "";
     position: absolute;
     top: 0;
@@ -250,7 +250,7 @@ ul#line_tabs li:last-child a {
     width: 4px;
 }
 
-#select_bill li.ui-selected {
+#bill_select li.ui-selected {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -264,18 +264,18 @@ ul#line_tabs li:last-child a {
     background: url("img/bg_bill_active.png") repeat-x center;
 }
 
-#select_bill li:before.ui-selected {
+#bill_select li:before.ui-selected {
     background: url("img/bg_bill_active_before.png") no-repeat center left !important;
     left: -4px;
 }
 
-#select_bill li:after.ui-selected {
+#bill_select li:after.ui-selected {
     background: url("img/bg_bill_active_after.png") no-repeat center right !important;
     right: -4px;
 }
 
-#select_bill li:before.ui-selected,
-#select_bill li:after.ui-selected {
+#bill_select li:before.ui-selected,
+#bill_select li:after.ui-selected {
     content: "";
     position: absolute;
     top: 0;
@@ -284,36 +284,47 @@ ul#line_tabs li:last-child a {
 }
 /*---------------------------------*/
 
-#select_bill span.balance {
-    display: inline-blocks;
-    width: 30px;
-    padding: 0 0 0 200px;
+#bill_select span.bill_title {
+    display: inline-block;
+    width: 100px;
 }
 
+#bill_active span.finance {
+    display: inline-block;
+    width: 90px;
+}
 
-#active_bill {
+#bill_select span.balance,
+#bill_active span.finance {
+    display: inline-block;
+    padding: 0 0 0 20px;
+}
+
+#bill_active {
     background-color: #e4f2e0;
+    margin: 25px 0 0 0;
+    padding: 10px 0;
 }
 
-#active_bill p {
+#bill_active p {
     color: #535252;
     font-weight: bold;
 }
 
-#active_bill span {
-    padding: 0 0 0 20px;
-}
-
-#active_bill p:last-child {
+#bill_active p:last-child {
     margin-bottom: 0;
 }
 
-#active_bill>div.float-left:after {
+#bill_active .earn_money:after {
     content: "«Экструм»";
     font-size: 11px;
     line-height: 15px;
     color: #80897e;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 30px;
+}
+
+#bill_active .bill_button {
+    padding: 50px 0 0 300px;
 
 }
 
@@ -683,6 +694,7 @@ div.relative span {
     font-size: 13px;
     color: #535252;
     font-weight: bold;
+    padding-left: 15px;
 }
 
 .personal_page label {
