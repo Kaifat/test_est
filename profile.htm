@@ -124,8 +124,9 @@
 
 <!------------- MY CSS and JS ----->
 
-    <link rel="stylesheet" type="text/css" href="./my_css.css">
     <script src="./js/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="./my_css.css">
     <script src="./js/profile_tabs.js" type="text/javascript"></script>
 
 </head>
@@ -323,18 +324,21 @@
 
                             <div class="profile_status clearfix">
                                 <div class="ava">
-                                    <a class="shadow"><img alt="" src="./img/avatar.jpg" class="profile-img" id="profile-img"></a>
+                                    <a class="shadow" href="#"><img alt="" src="./img/avatar.jpg" class="profile-img" id="profile-img"></a>
                                 </div>
 
-                                <div>
-                                    <p>Здравствуйте, <strong>Уолтер Уайт</strong></p>
-                                    <label>Статус:</label>
-                                    <select>
-                                        <option>Silver</option>
-                                        <option>Gold</option>
-                                        <option>Platinum</option>
-                                        <option>Partner</option>
-                                    </select>
+                                <div class="float-left">
+                                    <label class="select-style-label">Статус:</label>
+                                    <div class="select-style">
+                                        <button id="selected-status"><span>Silver</span></button>
+                                        <button id="select-status"><span>Выбрать статус</span></button>
+                                        <ul id="select-status-menu">
+                                            <li>Silver <a href="#">Куплено</a></li>
+                                            <li>Gold <a href="#">Купить</a></li>
+                                            <li>Platinum <a href="#">Купить</a></li>
+                                            <li>Partner <a href="#">Купить</a></li>
+                                        </ul>
+                                     </div>
                                 </div>
                             </div>
 
