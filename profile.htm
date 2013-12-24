@@ -371,7 +371,7 @@
                                                         <input type="text" name="patronymic_name">
                                                     </div>
                                                 </div>
-                                                <div class="check">
+                                                <div class="check_green">
                                                     <input id="hidden_contacts" type="checkbox" checked="checked">
                                                     <label for="hidden_contacts">Скрыть Ф.И.О и контакты на нашем сайте:</label>
                                                 </div>
@@ -479,7 +479,7 @@
                                                 </div>
                                                 <div  class="float-right">
                                                     <!--<input type="submit" value="Применить">-->
-                                                    <p class="submit_form"><a href="#">Применить</a></p>
+                                                    <div class="submit_form"><a href="#">Применить</a></div>
                                                 </div>
                                             </div>
                                             <hr>
@@ -619,8 +619,10 @@
                                             <h3>Cars</h3>
                                             <div>
                                                 <ul>
-                                                    <li>Convertible</li>
-                                                    <li>Coupe</li>
+                                                    <li><span>Convertible</span><input type="text" value="4734.60 EUR" readonly><div class="submit_form"><a href="#">Применить</a></div><div class="check_blue"><input id="checked_goods" type="checkbox" checked="checked">
+                                                        <label for="checked_goods">&nbsp;</label></div></li>
+                                                    <li><span>Coupe</span><input type="text" value="47.60 EUR" readonly><a href="#">Применить</a><input type="checkbox"></li>
+                                                    <li><span>Touring (E91)</span><input type="text" value="147.60 EUR" readonly><a href="#">Применить</a><input type="checkbox"></li>
                                                 </ul>
                                             </div>
                                             <h3>Диагностика</h3>
@@ -684,7 +686,7 @@
                                         </div>
                                         <div class="clearfix">
                                             <p class="float-left">Преждет чем отправить вопрос, ознакомьтесь с частозадаваевыми вопросами ниже.</p>
-                                            <p class="submit_form float-right"><a href="">отправить</a></p>
+                                            <div class="submit_form float-right"><a href="">отправить</a></div>
                                         </div>
                                         <hr>
                                         <div class="clearfix">
