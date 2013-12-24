@@ -240,7 +240,7 @@ ul#line_tabs li:last-child a {
 /*tabs-2*/
 
 
-/*#bill_select li.ui-selected { background: #94bf86; color: white; }*/
+
 #bill_select { list-style-type: none; margin: 0; padding: 0; width: 469px; }
 
 
@@ -313,6 +313,29 @@ ul#line_tabs li:last-child a {
 }
 /*---------------------------------*/
 
+#bill_text {
+    padding-left: 520px;
+}
+
+#bill_text>p {
+    margin: 6px 0;
+    padding: 0;
+}
+
+
+
+p.bill_selected {
+    font-size: 12px;
+    color: #535252;
+    line-height: 32px;
+}
+
+p.bill_unselected {
+    font-size: 11px;
+    color: #aeaeae;
+    line-height: 32px;
+}
+
 #bill_select span.bill_title {
     display: inline-block;
     width: 100px;
@@ -353,7 +376,7 @@ ul#line_tabs li:last-child a {
 }
 
 #bill_active .bill_button {
-    padding: 50px 0 0 300px;
+    padding: 40px 0 0 300px;
 
 }
 
