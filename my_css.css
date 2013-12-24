@@ -730,6 +730,16 @@ div.relative span {
     position: relative;
 }
 
+#shop_categories h3 span.goods_name {
+    display: inline-block;
+    width: 200px;
+}
+
+#shop_categories h3 span.check_blue {
+    display: inline-block;
+    margin-left: 586px;
+}
+
 #shop_categories ul {
     list-style: none;
     padding: 0;
