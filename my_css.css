@@ -245,7 +245,7 @@ ul#line_tabs li:last-child a {
     width: 60px;
 }
 
-.personal_page .check {
+.personal_page .check_green {
     font-size: 12px;
     margin: 10px 0;
 }
@@ -273,14 +273,17 @@ ul#line_tabs li:last-child a {
 }
 
 /*--------------------------------------------------------------------*/
-.check input[type=checkbox] {
+.check_green input[type=checkbox],
+.check_blue input[type=checkbox] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 }
-.check label {
+.check_green label,
+.check_blue label {
     cursor: pointer;
 }
-.check label:after {
+.check_green label:after,
+.check_blue label:after {
     content: ' ';
     display: inline-block;
     width: 16px;
@@ -291,8 +294,12 @@ ul#line_tabs li:last-child a {
     margin-left: 15px;
 }
 
-.check input[type=checkbox]:checked + label:after {
+.check_green input[type=checkbox]:checked + label:after {
     background-position: 0 -16px;
+}
+
+.check_blue input[type=checkbox]:checked + label:after {
+    background-position: 0 -32px;
 }
 /*--------------------------------------------------------------------*/
 .form_block .float-left {
@@ -321,13 +328,13 @@ ul#line_tabs li:last-child a {
 /*tabs-2*/
 
 
-/*#select_bill li.ui-selected { background: #94bf86; color: white; }*/
-#select_bill { list-style-type: none; margin: 0; padding: 0; width: 469px; }
+
+#bill_select { list-style-type: none; margin: 0; padding: 0; width: 469px; }
 
 
 
 /*----------*/
-#select_bill li {
+#bill_select li {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -341,18 +348,18 @@ ul#line_tabs li:last-child a {
     background: url("img/bg_bill.png") repeat-x center #f4f4f4;
 }
 
-#select_bill li:before {
+#bill_select li:before {
     background: url("img/bg_bill_before.png") no-repeat center left;
     left: -4px;
 }
 
-#select_bill li:after {
+#bill_select li:after {
     background: url("img/bg_bill_after.png") no-repeat center right;
     right: -4px;
 }
 
-#select_bill li:before,
-#select_bill li:after {
+#bill_select li:before,
+#bill_select li:after {
     content: "";
     position: absolute;
     top: 0;
@@ -360,7 +367,7 @@ ul#line_tabs li:last-child a {
     width: 4px;
 }
 
-#select_bill li.ui-selected {
+#bill_select li.ui-selected {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -374,18 +381,18 @@ ul#line_tabs li:last-child a {
     background: url("img/bg_bill_active.png") repeat-x center;
 }
 
-#select_bill li:before.ui-selected {
+#bill_select li:before.ui-selected {
     background: url("img/bg_bill_active_before.png") no-repeat center left !important;
     left: -4px;
 }
 
-#select_bill li:after.ui-selected {
+#bill_select li:after.ui-selected {
     background: url("img/bg_bill_active_after.png") no-repeat center right !important;
     right: -4px;
 }
 
-#select_bill li:before.ui-selected,
-#select_bill li:after.ui-selected {
+#bill_select li:before.ui-selected,
+#bill_select li:after.ui-selected {
     content: "";
     position: absolute;
     top: 0;
@@ -394,36 +401,70 @@ ul#line_tabs li:last-child a {
 }
 /*---------------------------------*/
 
-#select_bill span.balance {
-    display: inline-blocks;
-    width: 30px;
-    padding: 0 0 0 200px;
+#bill_text {
+    padding-left: 520px;
+}
+
+#bill_text>p {
+    margin: 6px 0;
+    padding: 0;
 }
 
 
-#active_bill {
+
+p.bill_selected {
+    font-size: 12px;
+    color: #535252;
+    line-height: 32px;
+}
+
+p.bill_unselected {
+    font-size: 11px;
+    color: #aeaeae;
+    line-height: 32px;
+}
+
+#bill_select span.bill_title {
+    display: inline-block;
+    width: 100px;
+}
+
+#bill_active span.finance {
+    display: inline-block;
+    width: 90px;
+}
+
+#bill_select span.balance,
+#bill_active span.finance {
+    display: inline-block;
+    padding: 0 0 0 20px;
+}
+
+#bill_active {
     background-color: #e4f2e0;
+    margin: 25px 0 0 0;
+    padding: 10px 0;
 }
 
-#active_bill p {
+#bill_active p {
     color: #535252;
     font-weight: bold;
 }
 
-#active_bill span {
-    padding: 0 0 0 20px;
-}
-
-#active_bill p:last-child {
+#bill_active p:last-child {
     margin-bottom: 0;
 }
 
-#active_bill>div.float-left:after {
+#bill_active .earn_money:after {
     content: "«Экструм»";
     font-size: 11px;
     line-height: 15px;
     color: #80897e;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 30px;
+}
+
+#bill_active .bill_button {
+    padding: 40px 0 0 300px;
 
 }
 
@@ -484,13 +525,13 @@ ul#line_tabs li:last-child a {
 /*-------------------------------*/
 .submit_form a {
     position: relative;
-    height: 32px;
+    height: 30px;
     background: url("img/bg_submit.png") repeat-x center,
                 linear-gradient(180deg, #2caf41, #2b612e);
     color: #ffffff;
-    padding: 0 25px;
+    padding: 0 20px;/*было 25 проверить как лучше*/
     display: inline-block;
-    line-height: 32px;
+    line-height: 30px;
     border: none;
 }
 
@@ -509,7 +550,7 @@ ul#line_tabs li:last-child a {
     content: "";
     position: absolute;
     top: 0;
-    height: 32px;
+    height: 30px;
     width: 6px;
 }
 /*---------------*/
@@ -668,23 +709,71 @@ div.relative span {
 
 /*tabs-5*/
 
+/*Accordion*/
+
+#shop_categories {
+    font-family: Tahoma;
+}
+
 #shop_categories h3 {
-    border: solid 1px #c6c6c6;
-    border-radius: 3px ;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 10px;
-    font-size: 12px;
+    border: solid 1px #cacaca;
+    background: linear-gradient(180deg, #ffffff, #f7f7f9);
+    border-radius: 3px;
+    box-shadow: 0 2px 3px #d3d3d3;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: #3e3e3e;
     cursor: pointer;
-    /*box-shadow:;*/
+    z-index: 30;
+}
+
+#shop_categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#shop_categories ul li {
+    border: solid 1px #cacaca;
+    background-color: #f8f8f8;
+    padding: 0 15px;
+    margin: 0;
+    height: 36px;
+    line-height: 36px;
+}
+
+#shop_categories ul li:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+#shop_categories ul li span {
+    display: inline-block;
+    width: 200px;
+    font-size: 12px;
+    color: #575757;
+}
+
+#shop_categories ul li input[type=text] {
+    height: 20px;
+    width: 90px;
+    text-align: center;
+    margin-left: 350px;
+}
+
+#shop_categories ul li div {
+    display: inline-block;
+    padding: 0 5px 0 10px;
+}
+
+#shop_categories ul li div.check_blue {
+    display: inline-block;
+    padding: 0;
 }
 
 /*tabs-6*/
-
-
-
-
-
 
 
 /*tab-7*/
@@ -793,6 +882,7 @@ div.relative span {
     font-size: 13px;
     color: #535252;
     font-weight: bold;
+    padding-left: 15px;
 }
 
 .personal_page label {
@@ -800,6 +890,11 @@ div.relative span {
     font-weight: bold;
     line-height: 30px;
     display: block;
+}
+
+.personal_page #tabs-1 label,
+.personal_page #tabs-3 label,
+.personal_page #tabs-8 label {
     float: left;
     margin: 0 12px 0 0;
 }
