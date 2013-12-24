@@ -638,7 +638,7 @@ div.relative span {
     border: solid 1px #cacaca;
     background: linear-gradient(180deg, #ffffff, #f7f7f9);
     border-radius: 3px;
-    box-shadow: 0 2px 3px #d3d3d3;
+    box-shadow: 0 2px 2px #d3d3d3;
     height: 36px;
     line-height: 36px;
     padding: 0 15px;
@@ -646,7 +646,7 @@ div.relative span {
     font-size: 13px;
     color: #3e3e3e;
     cursor: pointer;
-    z-index: 30;
+    position: relative;
 }
 
 #shop_categories ul {
@@ -932,22 +932,22 @@ table#request_history  tr.balance_minus td:nth-child(3) a {
     color: #7a1414;
 }
 
-table#bill_history  td_1,
-table#request_history  td_1 {
+table#bill_history  .td_1,
+table#request_history  .td_1 {
     width: 16%;
 }
 
-table#bill_history  td_2,
-table#request_history  td_2 {
+table#bill_history  .td_2,
+table#request_history  .td_2 {
     width: 20%;
 }
 
-table#bill_history  td_3,
-table#request_history  td_3 {
+table#bill_history  .td_3,
+table#request_history  .td_3 {
     width: 32%;
 }
 
-table#bill_history  td_4,
-table#request_history  td_4 {
+table#bill_history  .td_4,
+table#request_history  .td_4 {
     width: 32%;
 }
