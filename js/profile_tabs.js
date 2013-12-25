@@ -23,6 +23,11 @@
             }
         });
 
+        // div editable
+        $('.editable').each(function(){
+            this.contentEditable = true;
+        });
+
         // shop_categories
         $('#shop_categories').accordion({
             collapsible: true,

@@ -284,7 +284,8 @@ ul#line_tabs li:last-child a {
 
 .personal_page input[type=text],
 .personal_page input[type=password],
-.personal_page textarea {
+.personal_page textarea,
+.editable {
     height: 28px;
     border: solid 1px #cacaca;
     border-radius: 3px;
@@ -720,9 +721,17 @@ p.bill_unselected {
     width: 850px;
 }
 
-#tabs-5 textarea {
+#tabs-5 div.editable {
+    border: 1px solid #ccc;
+    background: #ffffff;
+    padding: 0 12px;
+    margin: 10px 0;
     width: 850px;
     height: 276px;
+}
+#tabs-5 div.editable p {
+    padding: 0;
+    margin: 5px 0;
 }
 
 /*Accordion*/
