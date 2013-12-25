@@ -30,6 +30,11 @@
             heightStyle: "content"
         });
 
+        // fix for checkbox in accordion
+        $('span.check_blue').click(function(event) {
+            event.stopPropagation();
+        });
+
         $( "#bill_select" ).selectable();
 
         // custom input file upload
