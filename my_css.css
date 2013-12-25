@@ -33,7 +33,7 @@
 }
 .select-style {
     position: relative;
-    width: 147px;
+    width: 146px;
     float: left;
 }
 #selected-status,
@@ -723,7 +723,7 @@ p.bill_unselected {
 }
 
 #color_templet {
-    padding-left: 500px;
+    padding: 30px 0 0 600px;
 }
 
 #tabs-5 label {
