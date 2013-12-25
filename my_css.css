@@ -371,6 +371,39 @@ div.file_upload input {
     background-position: 0 -32px;
 }
 /*--------------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+/*RADIOBOX*/
+
+.radiobox_blue input[type=radio] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.radiobox_blue label {
+    cursor: pointer;
+}
+
+.radiobox_blue label:before {
+    content: ' ';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(img/radio.png);
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+
+.radiobox_blue input[type=radio]:checked + label:before {
+    background-position: 0 -16px;
+}
+
+
+
+/*-------------------------------------*/
+
+
 .form_block .float-left {
     margin-right: 39px;
 }
@@ -598,7 +631,7 @@ p.bill_unselected {
     background: url("img/bg_submit.png") repeat-x center,
                 linear-gradient(180deg, #2caf41, #2b612e);
     color: #ffffff;
-    padding: 0 20px;/*было 25 проверить как лучше*/
+    padding: 0 15px;/*было 25 проверить как лучше*/
     display: inline-block;
     line-height: 30px;
     border: none;
@@ -623,12 +656,6 @@ p.bill_unselected {
     width: 6px;
 }
 /*---------------*/
-
-/*#tabs-3 input[type=radio],*/
-/*#tabs-3 input[type=radio] span {*/
-    /*vertical-align: middle;*/
-/*}*/
-
 
 .list_title {
     font-size: 12px;
@@ -915,6 +942,24 @@ div.relative span {
     margin: 3px 0;
 }
 
+#status_buy h3 span {
+    display: inline-block;
+    width: 200px;
+}
+
+#status_buy h3 span.status_wrap {
+    display: inline-block;
+    width: 46px;
+    height: 27px;
+    margin: 0 0 0 600px;
+    padding: 0;
+    font-size: 11px;
+    color: #3e3e3e;
+    font-family: Tahoma;
+    font-weight: normal;
+    border-bottom: dashed 1px #3e3e3e;
+}
+
 #status_buy ul {
     list-style: none;
     margin: 0;
@@ -973,8 +1018,9 @@ table#goods_buy td span.inprocess_status {
 /**/
 
 table#goods_buy {
+    color: #535252;
+    font-size: 12px;
     width: 100%;
-    font-family: Tahoma;
     border-collapse: separate;
     border-spacing: 0 12px;
     margin-top: -10px; /* correct offset on first border spacing if desired */
@@ -1035,15 +1081,25 @@ table#goods_buy .goods_image a img {
 }
 
 table#goods_buy .goods_description {
-    margin: 7px 0;
+    margin: 14px 0;
     width: 500px;
-    height: 60px;
+    height: 48px;
     overflow: hidden;
 }
 
 table#goods_buy .goods_description p {
     padding: 0;
     margin: 0;
+    color: #707070;
+    font-size: 11px;
+    line-height: 1.2em;
+    font-family: Tahoma;
+}
+
+table#goods_buy .goods_description p>strong {
+    color: #535252;
+    font-size: 12px;
+    line-height: 1.7em;
 }
 
 table#goods_buy td span.sent_status,
@@ -1158,7 +1214,7 @@ table#goods_buy td span.inprocess_status {
 
 .personal_page h5 {
     font-size: 13px;
-    color: #535252;
+    color: #3e3e3e;
     font-weight: bold;
     padding-left: 15px;
 }

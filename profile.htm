@@ -493,9 +493,14 @@
                                                 </div>
                                             </div>
                                             <hr>
-                                            <div>
-                                                <input type="radio" name="visage" value="tree"><span>Отображать в виде дерева</span>
-                                                <input type="radio" name="visage" value="list"><span>Отображать в виде списка</span>
+                                            <div class="radiobox_blue clearfix">
+
+                                                <input type="radio" id="width_1" checked="checked" name="visage" value="tree"><label for="width_1">Отображать в виде дерева</label>
+
+
+                                                <input type="radio" id="width_2" checked="checked" name="visage" value="list"><label for="width_2">Отображать в виде списка</label>
+
+
                                             </div>
                                             <hr>
                                             <div class="list_title clearfix">
@@ -731,7 +736,7 @@
                                         <h5>Ваши покупки</h5>
                                         <hr>
                                         <div id="status_buy">
-                                            <h3>Покупка статусов</h3>
+                                            <h3><span>Покупка статусов</span><span class="status_wrap">Cвернуть</span></h3>
                                             <div>
                                                 <ul>
                                                     <li><span>Покупка статуса SILVER</span><span class="delivered_status">доставлен</span></li>
