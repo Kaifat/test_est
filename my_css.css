@@ -823,21 +823,19 @@ p.bill_unselected {
     margin: 3px 0;
 }
 
-#status_buy h3 span {
+#status_buy h3 a#toggle-statuses {
+    float: right;
     display: inline-block;
-    width: 200px;
-}
-
-#status_buy h3 span.status_wrap {
-    display: inline-block;
-    width: 46px;
     height: 27px;
-    margin: 0 0 0 600px;
+    margin: 0;
     padding: 0;
     font-size: 11px;
     color: #3e3e3e;
     font-family: Tahoma;
     font-weight: normal;
+}
+
+a#toggle-statuses span {
     border-bottom: dashed 1px #3e3e3e;
 }
 

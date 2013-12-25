@@ -50,5 +50,11 @@
 
         // jquery.orgchart - structure tree chart
         $("#structure-tree-source").orgChart({container: $("#structure-tree-chart")});
+
+        // toggle-statuses
+        $('#toggle-statuses').click(function() {
+            $('#statuses-list').toggle();
+            $('#toggle-statuses span').toggle();
+        });
     });
 })(jQuery);
