@@ -47,5 +47,8 @@
         $('#file_upload').change(function() {
             replaceFileInputVal(this.id, '#file_upload_result');
         });
+
+        // jquery.orgchart - structure tree chart
+        $("#structure-tree-source").orgChart({container: $("#structure-tree-chart")});
     });
 })(jQuery);

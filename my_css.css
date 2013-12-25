@@ -1001,7 +1001,7 @@ div.hr {
     margin: 10px 0;
     background: #fff url(img/hr_style_page.png) repeat-x center center;
 }
-div.hr hr {
+div.hr hr, .hide {
     display: none;
 }
 
