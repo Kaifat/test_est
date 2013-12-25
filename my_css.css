@@ -1423,11 +1423,21 @@ table#goods_buy td span.inprocess_status {
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.background_boss {
+.background_boss,
+.background_junior {
     width: 115px;
     height: 143px;
-    border: 1px solid red;
-    background: url("img/bg_boss_box_under.png") no-repeat center;
+    background-repeat:  no-repeat;
+    background-position: center;
+    border: solid 1px #f8f8f8;
+}
+
+.background_boss {
+    background-image: url("img/bg_boss_box_under.png");
+}
+
+.background_junior {
+    background-image: url("img/bg_junior_under.png");
 }
 
 .background_box {
