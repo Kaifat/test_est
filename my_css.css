@@ -1456,16 +1456,33 @@ table#goods_buy td span.inprocess_status {
 .silver_number,
 .platinum_number {
     color: #535252;
+    width: 35px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-right: solid 1px #ffffff;
 }
 
 .gold_number {
-    background: url("img/bg_gold.png")
+    background-image: url("img/bg_gold.png")
 }
 
 .silver_number {
-    background: url("img/bg_silver.png")
+    background-image: url("img/bg_silver.png")
 }
 
 .platinum_number {
-    background: url("img/bg_gold.png")
+    background-image: url("img/bg_gold.png")
+}
+
+.status_word {
+    text-transform: uppercase;
+    height: 27px;
+    width: 76px;
+    text-align: center;
+    line-height: 27px;
+    border-left: solid 1px #c8c8c8;
+
 }
