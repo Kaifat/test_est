@@ -33,17 +33,24 @@
 }
 .select-style {
     position: relative;
-    width: 150px;
+    width: 147px;
     float: left;
 }
 #selected-status,
-#select-status {
+#select-status,
+#selected-color,
+#select-color {
     background:linear-gradient(0deg, #e0e0e0, #f6f6f6);
     height: 27px;
     border: 1px solid #D3D3D3;
-    position: relative;
+    position: absolute;
+    top: 0;
 }
-#selected-status {
+#selected-color {
+    height: 25px !important;
+}
+#selected-status,
+#selected-color {
     width: 120px;
     margin-left: 0;
     margin-right: -0.3em;
@@ -58,14 +65,18 @@
     overflow: visible;
     padding: 0;
     text-align: left;
+    left: 0;
 }
 
-#selected-status span {
-    padding: 0 10px;
+#selected-status span,
+#selected-color span {
+    margin: 0 10px;
     display: block;
     line-height: normal;
+    padding: 0;
 }
-#select-status {
+#select-status,
+#select-color {
     cursor: pointer;
     display: inline-block;
     line-height: normal;
@@ -76,10 +87,11 @@
     width: 30px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    left: 0;
+    right: 0;
     top: 0;
 }
-#select-status span {
+#select-status span,
+#select-color span {
     background-image: url("./img/icon-select.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -88,12 +100,13 @@
     width: 100%;
     height: 100%;
 }
+
 ul#select-status-menu {
     width: 148px;
     background: #f6f6f6;
     position: absolute;
     z-index: 50;
-    right: 0;
+    right: -3px;
     top: 26px;
     margin: 0;
     padding: 0;
@@ -710,7 +723,7 @@ p.bill_unselected {
 }
 
 #color_templet {
-    padding-left: 600px;
+    padding-left: 500px;
 }
 
 #tabs-5 label {

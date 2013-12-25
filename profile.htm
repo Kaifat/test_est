@@ -127,9 +127,13 @@
     <!-- jquery-ui -->
     <script src="./js/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
 
-    <!-- jquery-orgchart -->
+    <!-- jquery.orgchart -->
     <script src="./js/jquery-orgchart/jquery.orgchart.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="./js/jquery-orgchart/jquery.orgchart.custom.css">
+
+    <!-- jquery.simplecolorpicker -->
+    <script src="./js/jquery-simplecolorpicker/jquery.simplecolorpicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/jquery-simplecolorpicker/jquery.simplecolorpicker.css">
 
     <!-- my js and css -->
     <link rel="stylesheet" type="text/css" href="./my_css.css">
@@ -702,8 +706,26 @@
                                                         <input type="text" value="г. Москва, ул. Братиславская, дом 108, оф. 324">
                                                     </div>
                                                 </div>
-                                                <div id="color_templet">
+                                                <div id="color_templet" class="clearfix">
                                                     <label>Цвет шаблона</label>
+                                                    <select name="template-color" id="template-color">
+                                                        <option value="#7bd148">Green</option>
+                                                        <option value="#5484ed">Bold blue</option>
+                                                        <option value="#a4bdfc">Blue</option>
+                                                        <option value="#46d6db">Turquoise</option>
+                                                        <option value="#7ae7bf">Light green</option>
+                                                        <option value="#51b749">Bold green</option>
+                                                        <option value="#fbd75b">Yellow</option>
+                                                        <option value="#ffb878">Orange</option>
+                                                        <option value="#ff887c">Red</option>
+                                                        <option value="#dc2127">Bold red</option>
+                                                        <option value="#dbadff">Purple</option>
+                                                        <option value="#e1e1e1">Gray</option>
+                                                    </select>
+                                                    <div class="select-style">
+                                                        <div id="selected-color"></div>
+                                                        <button id="select-color"><span>Выбрать цвет</span></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="hr">&nbsp;<hr></div>

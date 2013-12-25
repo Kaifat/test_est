@@ -23,6 +23,15 @@
             }
         });
 
+        // jquery.colorpicker
+        $('select#template-color').simplecolorpicker({
+            picker: true,
+            iconContainer: $('#selected-color')
+        });
+        $( "#select-color" ).click(function() {
+            $('#selected-color span').trigger('click');
+        });
+
         // div editable
         $('.editable').each(function(){
             this.contentEditable = true;
