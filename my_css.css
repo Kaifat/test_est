@@ -1279,17 +1279,17 @@ table#partnership_list td:nth-child(2) {
 }
 
 table#partnership_list .td_gold {
-    background: url("img/bg_td_gold.png") no-repeat center center;
+    background: url("img/bg_gold.png") no-repeat center center;
     color: #535252;
 }
 
 table#partnership_list .td_silver {
-    background: url("img/bg_td_silver.png") no-repeat center center;
+    background: url("img/bg_silver.png") no-repeat center center;
     color: #535252;
 }
 
 table#partnership_list .td_platinum {
-    background: url("img/bg_td_platinum.png") no-repeat center center;
+    background: url("img/bg_platinum.png") no-repeat center center;
     color: #535252;
 }
 
@@ -1410,4 +1410,55 @@ table#goods_buy td span.sent_status,
 table#goods_buy td span.delivered_status,
 table#goods_buy td span.inprocess_status {
     margin: 0;
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.background_boss {
+    width: 115px;
+    height: 143px;
+    border: 1px solid red;
+    background: url("img/bg_boss_box_under.png") no-repeat center;
+}
+
+.background_box {
+    background: url("img/bg_boss_box.png") repeat-x center;
+    border: solid 1px #c8c8c8;
+    border-radius: 3px;
+    margin: 38px 0 0 0;
+    height: 96px;
+    font-size: 12px;
+    color: #686868;
+}
+
+.name_box {
+    font-family: Tahoma;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: solid 1px #c8c8c8;
+}
+
+.status_box {
+    border-top: solid 1px #ffffff;
+}
+
+.gold_number,
+.silver_number,
+.platinum_number {
+    color: #535252;
+}
+
+.gold_number {
+    background: url("img/bg_gold.png")
+}
+
+.silver_number {
+    background: url("img/bg_silver.png")
+}
+
+.platinum_number {
+    background: url("img/bg_gold.png")
 }
