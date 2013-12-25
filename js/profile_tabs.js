@@ -31,5 +31,16 @@
         });
 
         $( "#bill_select" ).selectable();
+
+        // custom input file upload
+        function replaceFileInputVal(fileId, newInputId){
+            var formFile = document.getElementById(fileId);
+            var fileName = formFile.value.replace(/^([^\\\/]*(\\|\/))*/,"");
+            $(newInputId).val(fileName);
+        }
+
+        $('#file_upload').change(function() {
+            replaceFileInputVal(this.id, '#file_upload_result');
+        });
     });
 })(jQuery);
