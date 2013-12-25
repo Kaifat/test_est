@@ -255,7 +255,8 @@ ul#line_tabs li:last-child a {
 }
 
 .personal_page input[type=text],
-.personal_page input[type=password] {
+.personal_page input[type=password],
+.personal_page textarea {
     height: 28px;
     border: solid 1px #cacaca;
     border-radius: 3px;
@@ -264,6 +265,12 @@ ul#line_tabs li:last-child a {
     font-size: 11px;
     color: #757575;
 }
+
+.personal_page textarea {
+    padding: 12px;
+}
+
+
 .personal_page input[type=text] {
     width: 360px;
 }
@@ -352,7 +359,7 @@ div.file_upload input {
     height: 16px;
     background: url(img/checkbox.png);
     position: relative;
-    top: 3px;
+    top: 2px;
     margin-left: 15px;
 }
 
@@ -771,6 +778,45 @@ div.relative span {
 
 /*tabs-5*/
 
+#tabs-5 .seller_address label,
+#tabs-5 .seller_telecom label {
+    display: block;
+    width: 60px;
+}
+
+#tabs-5 .seller_telecom>div {
+    margin: 0 15px 10px 0;
+}
+
+#tabs-5 .seller_telecom>div:last-child {
+    margin: 0;
+}
+
+#tabs-5 .seller_telecom input[type=text] {
+    width: 160px;
+}
+
+#tabs-5 .seller_address input[type=text] {
+    width: 434px;
+}
+
+#color_templet {
+    padding-left: 600px;
+}
+
+#tabs-5 label {
+    color: #3e3e3e;
+}
+
+#tabs-5 input[type=text] {
+    width: 850px;
+}
+
+#tabs-5 textarea {
+    width: 850px;
+    height: 276px;
+}
+
 /*Accordion*/
 
 #shop_categories {
@@ -779,7 +825,8 @@ div.relative span {
 
 #shop_categories h3 {
     border: solid 1px #cacaca;
-    background: linear-gradient(180deg, #ffffff, #f7f7f9);
+    background: url("img/accordion_spread.png") no-repeat center right 10px,
+                linear-gradient(180deg, #ffffff, #f7f7f9);
     border-radius: 3px;
     box-shadow: 0 2px 2px #d3d3d3;
     height: 36px;
@@ -790,6 +837,11 @@ div.relative span {
     color: #3e3e3e;
     cursor: pointer;
     position: relative;
+}
+
+#shop_categories h3.ui-accordion-header-active {
+    background: url("img/accordion_break.png") no-repeat center right 10px,
+                linear-gradient(180deg, #ffffff, #f7f7f9);
 }
 
 #shop_categories h3 span.goods_name {
@@ -916,8 +968,8 @@ div.relative span {
 }
 
 #tabs-8 textarea {
-    width: 835px;
-    height: 100px;
+    width: 811px;
+    height: 76px;
 }
 
 #tabs-8 div>p.float-left {
@@ -939,7 +991,7 @@ div.relative span {
 }
 
 #tabs-8 .readmore {
-    margin-right: 40px;
+    margin-right: 43px;
 }
 
 /*GENERAL*/
@@ -966,11 +1018,11 @@ div.relative span {
 
 .personal_page #tabs-1 label,
 .personal_page #tabs-3 label,
+.personal_page #tabs-5 #seller_info label,
 .personal_page #tabs-8 label {
     float: left;
     margin: 0 12px 0 0;
 }
-
 
 /*BUTTONS*/
 
