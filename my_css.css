@@ -92,7 +92,7 @@ ul#select-status-menu {
     width: 148px;
     background: #f6f6f6;
     position: absolute;
-    z-index: 20;
+    z-index: 50;
     right: 0;
     top: 26px;
     margin: 0;
@@ -146,7 +146,7 @@ ul#line_tabs li {
 ul#line_tabs li.active {
     background: url("img/tab_active_bg.png") repeat-x left top;
     line-height: 47px;
-    z-index: 50;
+    z-index: 40;
     padding-top: 1px;
     margin-top: 0;
     margin-right: 0; /* -37px */
