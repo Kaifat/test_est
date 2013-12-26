@@ -183,7 +183,9 @@ ul#line_tabs li {
     overflow:visible;
     padding: 0 0 0 20px;
     background: url("img/tab_bg.png") repeat-x left top,
-        linear-gradient(-225deg, #e3e3e3, #efefef);
+                 linear-gradient(-225deg, #e3e3e3, #efefef);
+    background: url("img/tab_bg.png") repeat-x left top,
+                -webkit-linear-gradient(top left, #e3e3e3, #efefef);/*for Safari*/
     line-height: 37px;
     font-size: 12px;
 }
