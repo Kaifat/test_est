@@ -157,9 +157,6 @@ ul#select-status-menu li:first-child {
     padding: 0 20px 0 0 !important;
 }
 
-
-
-
 /*NAVIGATION TABS*/
 
 #tabs {
@@ -318,7 +315,6 @@ ul#line_tabs li:last-child a {
     padding: 12px;
 }
 
-
 .personal_page input[type=text] {
     width: 360px;
 }
@@ -389,7 +385,6 @@ div.file_upload input {
     opacity: 0;
 }
 
-
 .form_block .float-left {
     margin-right: 39px;
 }
@@ -437,7 +432,6 @@ div.file_upload input {
     border: solid 1px #cacaca;
     border-radius: 3px;
 }
-
 
 #bill_select li.ui-selected {
     color: #ffffff;
@@ -518,7 +512,7 @@ p.bill_unselected {
 }
 
 .list_sort>div {
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .list_sort>div:last-child {
@@ -534,9 +528,6 @@ p.bill_unselected {
     color: #686868;
     font-size: 12px;
 }
-
-
-/*---------------*/
 
 .list_title {
     font-size: 12px;
@@ -562,8 +553,6 @@ p.bill_unselected {
     width: 275px;
     margin-right: 15px;
 }
-
-
 
 /*tabs-5*/
 
@@ -788,9 +777,6 @@ table#goods_buy td span.inprocess_status {
     background-image: url("img/bg_status_inprocess.png");
 }
 
-/**/
-
-
 /*tab-7*/
 
 #tabs-7 article {
@@ -839,6 +825,10 @@ table#goods_buy td span.inprocess_status {
     margin: 10px 40px 0 0;
 }
 
+#tabs-8 .submit_form a {
+    width: 136px !important;
+}
+
 #tabs-6 .history_asks {
     font-size: 13px;
     color: #3e3e3e;
@@ -883,13 +873,14 @@ table#goods_buy td span.inprocess_status {
 .personal_page #tabs-5 #seller_info label,
 .personal_page #tabs-8 label {
     float: left;
-    margin: 0 12px 0 0;
+    margin: 0 13px 0 0;
 }
 
-input:focus,
+input, textarea,
+input:active,
 textarea:active,
-textarea:focus {
-    outline: none;
+:focus {
+    outline:none;
 }
 
 /*Custom hr*/
@@ -901,7 +892,6 @@ div.hr {
 div.hr hr, .hide {
     display: none;
 }
-
 
 /*Custom checkbox*/
 .check_green input[type=checkbox],
@@ -935,7 +925,6 @@ div.hr hr, .hide {
     background-position: 0 -32px;
 }
 
-
 /*Custom radiobox*/
 .radiobox_blue input[type=radio] {
     position: absolute;
@@ -960,7 +949,6 @@ div.hr hr, .hide {
 .radiobox_blue input[type=radio]:checked + label:before {
     background-position: 0 -16px;
 }
-
 
 /*TABLES*/
 
@@ -1045,7 +1033,6 @@ table#bill_history td:nth-child(4),
 table#request_history td:nth-child(4) {
     width: 32%;
 }
-
 
 /*tabs-3*/
 table#partnership_list {
@@ -1227,18 +1214,14 @@ table#goods_buy td span.inprocess_status {
     margin: 0;
 }
 
-
-
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
 .background_boss,
 .background_junior,
 .background_junior_last {
     width: 115px;
-    height: 98px;
+    height: 105px;
     background-repeat:  no-repeat;
     background-position: center;
-    padding: 58px 0 7px 0;
+    padding: 58px 0 0;
 }
 
 .background_boss {
@@ -1313,7 +1296,7 @@ table#goods_buy td span.inprocess_status {
 /*tabs-3, tabs-8*/
 .submit_form a {
     height: 28px;
-    width: 106px;
+    width: 98px;
     font-size: 13px;
     line-height: 30px;
     background: url("img/bg_submit.png") repeat-x center;
@@ -1440,7 +1423,7 @@ table#goods_buy td span.inprocess_status {
     position: relative;
     display: inline-block;
     height: 26px;
-    width: 46px;
+    width: 50px;
     color: #686868;
     font-weight: bold;
     font-size: 11px;
@@ -1473,7 +1456,7 @@ table#goods_buy td span.inprocess_status {
     position: relative;
     display: inline-block;
     height: 26px;
-    width: 46px;
+    width: 50px;
     color: #686868;
     font-weight: bold;
     font-size: 11px;
