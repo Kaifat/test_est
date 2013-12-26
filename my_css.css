@@ -519,14 +519,33 @@ p.bill_unselected {
     margin-right: 0;
 }
 
-#tabs-3 select {
-    height: 30px;
-    width: 111px;
+.custom-select {
     background: url("img/bg_select.png") repeat-x center;
     border: solid 1px #bcbcbc;
     border-radius: 3px;
+    height: 28px;
+    width: 111px;
+    position: relative;
+    overflow: hidden;
+}
+.custom-select .select-icon {
+    background: url("./img/icon-select.png") no-repeat center center;
+    position: absolute;
+    z-index: 14;
+    height: 100%;
+    width: 25px;
+    right: 0;
+}
+.custom-select select {
+    background-color: transparent;
+    border: none;
+    height: 28px;
+    width: 131px;
     color: #686868;
     font-size: 12px;
+    line-height: 30px;
+    position: absolute;
+    z-index: 15;
 }
 
 .list_title {
