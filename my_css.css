@@ -126,6 +126,12 @@ ul#select-status-menu li:first-child {
     border-top: solid 1px #e0e0e0;
 }
 
+#select-status-menu span {
+    display: inline-block;
+    width: 50px;
+    margin-right: 20px;
+}
+
 /*EXTRA BLOCK*/
 
 #supernatant_block {
@@ -520,7 +526,7 @@ p.bill_unselected {
 }
 
 #tabs-3 select {
-    height: 27px;
+    height: 30px;
     width: 111px;
     background: url("img/bg_select.png") repeat-x center;
     border: solid 1px #bcbcbc;
@@ -529,67 +535,7 @@ p.bill_unselected {
     font-size: 12px;
 }
 
-/*#tabs-3 input[type=submit] {*/
-    /*position: relative;*/
-    /*height: 32px;*/
-    /*background: url("img/bg_submit.png") repeat-x center,*/
-                /*linear-gradient(180deg, #2caf41, #2b612e);*/
-    /*color: #ffffff;*/
-    /*padding: 0 30px;*/
-    /*border: none;*/
-/*}*/
 
-/*#tabs-3 input[type=submit]:before {*/
-    /*background: url("img/bg_submit_before.png") no-repeat center left;*/
-    /*left: 6px;*/
-/*}*/
-
-/*#tabs-3 input[type=submit]:after {*/
-    /*background: url("img/bg_submit_after.png") no-repeat center right;*/
-    /*right: -6px;*/
-/*}*/
-
-/*#tabs-3 input[type=submit]:before,*/
-/*#tabs-3 input[type=submit]:after {*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*height: 32px;*/
-    /*width: 6px;*/
-    /*border: solid 1px red;*/
-/*}*/
-
-/*-------------------------------*/
-.submit_form a {
-    position: relative;
-    height: 30px;
-    background: url("img/bg_submit.png") repeat-x center,
-                linear-gradient(180deg, #2caf41, #2b612e);
-    color: #ffffff;
-    padding: 0 15px;/*было 25 проверить как лучше*/
-    display: inline-block;
-    line-height: 30px;
-    border: none;
-}
-
-.submit_form a:before {
-    background: url("img/bg_submit_before.png") no-repeat center left;
-    left: -6px;
-}
-
-.submit_form a:after {
-    background: url("img/bg_submit_after.png") no-repeat center right;
-    right: -6px;
-}
-
-.submit_form a:before,
-.submit_form a:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 30px;
-    width: 6px;
-}
 /*---------------*/
 
 .list_title {
@@ -617,38 +563,7 @@ p.bill_unselected {
     margin-right: 15px;
 }
 
-.key_copy a {
-    width: 100px;
-    position: relative;
-    display: inline-block;
-    color: #656565;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 30px;
-    text-align: center;
-    /*padding: 0 20px;*/
-    background: url("img/bg_keycopy.png") repeat-x center,
-                linear-gradient(180deg, #f0f0f0, #e0e0e0) /*посмотреть еще, тут не совсем градиент*/
-}
 
-.key_copy a:before {
-    background: url("img/bg_keycopy_before.png") no-repeat center left;
-    left: -4px;
-}
-
-.key_copy a:after {
-    background: url("img/bg_keycopy_after.png") no-repeat center right;
-    right: -4px;
-}
-
-.key_copy a:before,
-.key_copy a:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 30px;
-    width: 4px;
-}
 
 /*tabs-5*/
 
@@ -763,10 +678,10 @@ p.bill_unselected {
 }
 
 #shop_categories ul li input[type=text] {
-    height: 20px;
+    height: 21px;
     width: 90px;
     text-align: center;
-    margin-left: 350px;
+    margin: 0 0 3px 361px;
 }
 
 #shop_categories ul li div {
@@ -780,8 +695,8 @@ p.bill_unselected {
 }
 
 .save_button {
-    margin: 20px auto;
-    width: 100%;
+    margin: 20px 0;
+    text-align: center;
 }
 
 /*tabs-6*/
@@ -921,7 +836,7 @@ table#goods_buy td span.inprocess_status {
 
 #tabs-8 .submit_form {
     text-transform: uppercase;
-    margin-right: 40px;
+    margin: 10px 40px 0 0;
 }
 
 #tabs-6 .history_asks {
@@ -971,6 +886,11 @@ table#goods_buy td span.inprocess_status {
     margin: 0 12px 0 0;
 }
 
+input:focus,
+textarea:active,
+textarea:focus {
+    outline: none;
+}
 
 /*Custom hr*/
 div.hr {
@@ -1040,58 +960,6 @@ div.hr hr, .hide {
 .radiobox_blue input[type=radio]:checked + label:before {
     background-position: 0 -16px;
 }
-
-
-/*BUTTONS*/
-
-/* NOT DELETE / LAST ACTUAL */
-
-/*#tabs-2 .asks a,*/
-/*#tabs-6 .asks a {*/
-
-/*}*/
-
-#tabs-2 .asks a {
-    margin: 0 10px;
-}
-
-
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-.asks a {
-    position: relative;
-    display: inline-block;
-    width: 170px;
-    height: 37px;
-    color: #535252;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 37px;
-    text-align: center;
-    /*padding: 0 45px;*/
-    background: url("img/bg_asks.png") repeat-x center #f0f0f0;
-}
-
-.asks a:before {
-    background: url("img/bg_asks_before.png") no-repeat center left;
-    left: -4px;
-}
-
-.asks a:after {
-    background: url("img/bg_asks_after.png") no-repeat center right;
-    right: -4px;
-}
-
-.asks a:before,
-.asks a:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 37px;
-    width: 4px;
-}
-
-
 
 
 /*TABLES*/
@@ -1442,18 +1310,57 @@ table#goods_buy td span.inprocess_status {
 
 /*BUTTONS*/
 
+/*tabs-3, tabs-8*/
+.submit_form a {
+    height: 28px;
+    width: 106px;
+    font-size: 13px;
+    line-height: 30px;
+    background: url("img/bg_submit.png") repeat-x center;
+}
+
 /*tabs-5*/
+.submit_goods a {
+    height: 21px;
+    width:93px;
+    font-size: 11px;
+    line-height: 23px;
+    background: url("img/bg_submit_goods.png") repeat-x center;
+}
+
 .save_button a {
-    display: inline-block;
     height: 50px;
     font-size: 20px;
-    color: #ffffff;
     text-transform: uppercase;
-    text-align: center;
     line-height: 52px;
     padding: 0 75px;
     background: url("img/bg_save_button.png") repeat-x center;
-    border: solid 1px #3d9347;
+}
+
+/*tabs-3 tabs-5*/
+.submit_form a,
+.submit_goods a,
+.save_button a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    border: solid 1px #3f9849;
+    border-radius: 3px;
+}
+
+/*tabs-4*/
+
+.key_copy a {
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    color: #656565;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 30px;
+    text-align: center;
+    background: url("img/bg_keycopy.png") repeat-x center;
+    border: solid 1px #cacaca;
     border-radius: 3px;
 }
 
@@ -1487,4 +1394,109 @@ table#goods_buy td span.inprocess_status {
     top: 0;
     height: 27px;
     width: 4px;
+}
+
+/*tabs-2, tabs-6*/
+
+#tabs-2 .asks a {
+    margin: 0 10px;
+}
+
+.asks a {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 37px;
+    color: #535252;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 37px;
+    text-align: center;
+    background: url("img/bg_asks.png") repeat-x center #f0f0f0;
+}
+
+.asks a:before {
+    background: url("img/bg_asks_before.png") no-repeat center left;
+    left: -4px;
+}
+
+.asks a:after {
+    background: url("img/bg_asks_after.png") no-repeat center right;
+    right: -4px;
+}
+
+.asks a:before,
+.asks a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 37px;
+    width: 4px;
+}
+
+/*Status button*/
+/*bought*/
+.status_bought a {
+    position: relative;
+    display: inline-block;
+    height: 26px;
+    width: 46px;
+    color: #686868;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 26px;
+    text-align: center;
+    background: url("img/bg_status_bought.png") repeat-x center;
+}
+
+.status_bought a:before {
+    background: url("img/bg_status_bought_before.png") no-repeat center left;
+    left: -10px;
+}
+
+.status_bought a:after {
+    background: url("img/bg_status_bought_after.png") no-repeat center right;
+    right: -10px;
+}
+
+.status_bought a:before,
+.status_bought a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 26px;
+    width: 10px;
+}
+
+/*not bought*/
+.status_not_bought a {
+    position: relative;
+    display: inline-block;
+    height: 26px;
+    width: 46px;
+    color: #686868;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 26px;
+    text-align: center;
+    background: url("img/bg_status_notbought.png") repeat-x center;
+}
+
+.status_not_bought a:before {
+    background: url("img/bg_status_notbought_before.png") no-repeat center left;
+    left: -10px;
+}
+
+.status_not_bought a:after {
+    background: url("img/bg_status_notbought_after.png") no-repeat center right;
+    right: -10px;
+}
+
+.status_not_bought a:before,
+.status_not_bought a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 26px;
+    width: 10px;
 }
