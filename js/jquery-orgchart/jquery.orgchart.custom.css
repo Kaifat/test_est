@@ -32,21 +32,21 @@ div.orgChart tr.lines td.line {
 }
 
 div.orgChart tr.lines td.top {
-    border-top            : 1px solid black;
+    border-top            : 2px solid #b5b5b5;
 }
 
 div.orgChart tr.lines td.left {
-    border-right          : 1px solid black;
+    border-right          : 1px solid #b5b5b5;
 }
 
 div.orgChart tr.lines td.right {
-    border-left           : 1px solid black;
+    border-left           : 1px solid #b5b5b5;
 }
 
 div.orgChart td {
     text-align            : center;
     vertical-align        : top;
-    padding               : 0px 2px;
+    padding               : 0px;
 }
 
 div.orgChart div.node {
@@ -54,7 +54,7 @@ div.orgChart div.node {
     display               : inline-block;
     padding               : 0;
     width                 : 115px;
-    height                : 143px;
+    height                : 163px;
 }
 
 div.orgChart.interactive div.hasChildren {
